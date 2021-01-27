@@ -4,7 +4,7 @@
 \usepackage{hyperref}
 \usepackage{comment}
 \title{CompTIA A+ Exam Questions}
-\author{Ramiro Gonzalez}
+\author{100+ Questions}
 \date{December 2020}
 
 \begin{document}
@@ -2395,19 +2395,338 @@ encoding amounts to 600 MB/s. SATA Revision 3.2 is 16 Gb/s
 typical write speed for Blu-ray discs and some flash media. 90
 MB/s is a typical write speed for an SD card.
     \end{itemize}
+    \item Which level of RAID stripes data and parity across three or
+more disks?
+    \begin{itemize}
+        \item C. RAID 5 stripes data and parity across three or more disks.
+RAID 0 does not stripe parity; it stripes data only and can use
+two disks or more. RAID 1 uses two disks only. Striping is an‐
+other name for RAID 0. RAID 10 contains two sets of mir‐
+rored disks that are then striped.
+    \end{itemize}
     \item Which of the following has the largest potential for storage ca‐
 pacity?
     \begin{itemize}
-        \item C. DVD-RW
+        \item D. Blu-ray, at a typical maximum of 50 GB, has the largest
+storage capacity. CDs top out just under 1 GB. DVDs have a
+maximum of 17 GB.
     \end{itemize}
     \item A customer complains that an important disc is stuck in the
 computer’s DVD-ROM drive. What should you recommend to
 the customer?
     \begin{itemize}
-        \item C. To use a paper clip to eject the tray
+        \item C. Tell the customer to use a paper clip to eject the DVD-ROM
+tray. Disassembling the drive is not necessary; the customer
+shouldn’t be told to do this. If the disc is rewritable, formatting
+it would erase the contents, even if you could format in thisscenario. Never tell a customer to dispose of a DVD-ROM
+drive; they rarely fail.
     \end{itemize}
     \item Which of the following best describes a specification for ac‐
 cessing storage while using PCI Express?
+    \begin{itemize}
+        \item A. Non-Volatile Memory Express (NVMe) is a specification
+for accessing storage while using PCI Express. Essentially, the
+M.2 slot on a motherboard taps into the PCI Express bus (x4)
+and uses a portion of the total bandwidth associated with that
+bus. The platters in a hard disk drive (HDD) rotate at a certain
+speed, for example 7,200 RPM, which is common; other typi‐
+cal speeds include 5,400 RPM and 10,000 RPM. Hot-swap‐
+pable capability is when drives can be removed and inserted
+while the system is on. SATA-based hard drives come in two
+main widths: 3.5” and 2.5”. The 3.5” drive is used in desktop
+computers, network-attached storage and other larger devices.
+The 2.5” drive is used in laptops and other smaller devices.
+    \end{itemize}
+
+\end{enumerate}
+\subsection{Motherboards and Cards} 
+\begin{enumerate}
+    \item Which motherboard form factor measures 12
+inches × 9.6 inches (305 mm × 244mm)?
+    \begin{itemize}
+        \item C. ATX boards measure 12 inches × 9.6 inches
+(305 mm × 244mm). microATX boards are square
+and measure 9.6 × 9.6 inches (244 mm × 244
+mm). SATA is a type of hard drive technology and
+the port used to connect hard drives to the
+motherboard. mITX (or Mini-ITX), also square,
+measures 6.7 × 6.7 inches (17 cm × 17 cm) . 
+    \end{itemize}
+    \item Which component supplies power to the CMOS
+when the computer is off?
+    \begin{itemize}
+        \item A. The lithium battery supplies power to the
+CMOS when the computer is off. This is because
+the CMOS is volatile and would otherwise lose the
+stored settings when the computer is turned off
+    \end{itemize}
+    \item To implement a secure boot process, which device
+should be listed first in the Boot Device Priority
+screen?
+    \begin{itemize}
+        \item D. To ensure that other users cannot boot the
+computer from removable media, set the first
+device in the Boot Device Priority screen to hard
+drive.
+    \end{itemize}
+    \item Which of the following connectors would you use
+to power a video card?
+    \begin{itemize}
+        \item B. A video card is normally powered by a 6-pin or
+8-pin PCIe connector. Lesser cards are simply
+powered by the PCIe bus. The 24-pin power
+connector is the main connector that leads from
+the power supply to the motherboard. Molex is
+used for fans, older IDE drives, and other
+secondary devices. 3.5 mm TRS (or 1/8 inch) is an
+audio connection.
+    \end{itemize}
+    \item Which of the following is a chip that stores
+encryption keys?
+    \begin{itemize}
+        \item D. To perform hard drive encryption, some
+motherboards come with a trusted platform
+module (TPM), a chip that stores encryption keys
+—it can be enabled in the BIOS. Intel
+Virtualization Technology (VT) is part of the
+firmware that supports the use of virtualization
+software such as Hyper-V and VMware. Secure
+boot can block rootkits and other malware from
+launching boot loaders that have been tampered
+with. Firmware (such as a motherboard’s BIOS) is
+should be updated or “flashed” periodically to take
+advantage of the latest functionality and security
+updates.
+    \end{itemize}
+\end{enumerate}
+\subsection{CPUs}
+\begin{enumerate}
+    \item What does Hyper-Threading do?
+    \begin{itemize}
+        \item C. Hyper-Threading allows for an operating
+system to send two simultaneous threads to be
+processed by a single CPU core. The OS views the
+CPU core as two virtual processors. Multiple cores
+would imply multicore technology, which means
+there are two physical processing cores within the
+CPU package. HyperTransport is a high-speed
+connection used by AMD from the CPU to RAM.
+    \end{itemize}
+    \item What seals the tiny gaps between the CPU cap and
+the heat sink
+    \begin{itemize}
+        \item D. Thermal compound/thermal paste is used to
+seal the small gaps between the CPU and heat
+sink. It is sometimes referred to as thermal gel or
+jelly (among a variety of other names), but not
+grape jelly. (Did I ever tell you about the time I
+found grape jelly inside a customer’s computer?
+Fun times.) Note: Never use petroleum-based
+products (such as 3-in-1 oil or WD-40) inside a
+computer; the oils can damage the components
+over time. TDP stands for thermal design power.
+    \end{itemize}
+    \item Which of the following can be defined as the
+amount of heat generated by the CPU, which the
+cooling system is required to dissipate?
+    \begin{itemize}
+        \item B. TDP (thermal design power) is the amount of
+power required to cool a computer and is linked
+directly to the amount of heat a CPU creates.
+Some CPUs come with a built-in graphics
+processing unit (GPU). This means that with a
+compatible motherboard, no separate video card
+is necessary. PSU stands for power supply unit.
+140 watts is a potential TDP rating but does not
+define what TDP is.
+    \end{itemize}
+    \item When deciding on a CPU for use with a specific
+motherboard, what does it need to be compatible
+with?
+    \begin{itemize}
+        \item B. The CPU needs to be compatible with the
+socket of the motherboard. The case doesn’t
+actually make much of a difference when it comes
+to the CPU. (Just make sure it’s large enough!)
+There is no wattage range, but you should be
+concerned with the voltage range of the CPU. PCI
+Express (PCIe) slots don’t actually play into this at
+all because there is no direct connectivity between
+the two
+    \end{itemize}
+    \item Which kind of socket incorporates “lands” to
+ensure connectivity to a CPU?
+    \begin{itemize}
+        \item C. LGA (Land Grid Array) is the type of socket
+that uses “lands” to connect the socket to the CPU.
+PGA sockets have pinholes that make for
+connectivity to the CPU’s copper pins. AM4 is a
+PGA socket that accepts AMD CPUs such as the
+Ryzen 7.
+    \end{itemize}
+    \item Which of the following enables the user to
+increase the base clock within the BIOS, thereby
+increasing the clock speed of the CPU?
+    \begin{itemize}
+        \item A. Overclocking enables the user to increase the
+clock speed of the CPU within the BIOS. Level 3
+(L3) cache comes in the largest capacities of the
+three types of cache and has the most latency;
+therefore, it is the slowest. If the CPU can’t find
+what it needs in L1, it moves to L2 and finally to
+L3. An integrated GPU is a video adapter that is
+built into the motherboard. The heat sink helps to
+dissipate heat from the CPU and is usually aided
+by a fan or liquid cooling system.
+    \end{itemize}
+   
+\end{enumerate}
+\subsection{Peripherals and Power}
+\begin{enumerate}
+    \item What does a KVM do?
+    \begin{itemize}
+        \item D. A KVM connects multiple computers to a single keyboard,
+mouse, and monitor. This way, fewer resources in the way of
+peripherals (input/output devices) are necessary to use the
+computers.
+    \end{itemize}
+    \item Which of the following are considered both input and output
+devices?
+    \begin{itemize}
+        \item D) Smart TVs, touchscreens, KVMs, and headsets are consid‐
+ered both input and output devices. Keyboards, mice, touch‐pads, smart card readers, motion sensors, and biometric de‐
+vices are considered input devices. Printers and speakers are
+considered output devices.
+    \end{itemize}
+    \item Which of the following devices can be used to perform combi‐
+nation shortcuts?
+    \begin{itemize}
+        \item A.A keyboard can be used to perform combination shortcuts.
+An example of a shortcut key is Ctrl + P which initiates a print
+job within an application. While a KVM will have a keyboard
+connected to it, it’s at the keyboard that you perform the short‐
+cut operation.
+    \end{itemize}
+    \item Which of the following incorporate the concept of resolution.
+(Select all that apply).
+    \begin{itemize}
+        \item B, C, and E. The mouse, printer, and LED display all deal
+with resolution. A mouse’s sensitivity is rated in DPI; for ex‐
+ample, 800 DPI is a low resolution for mice. A printer will
+commonly print out documents at the resolution 600 DPI
+(more on that in Chapter 15, “Printers and Multifunction De‐
+vices”. A monitor will commonly have a resolution of 1920 x
+1080 (or greater!)
+    \end{itemize}
+    \item Which of the following terms describes how the light output
+from a video projector is measured?
+    \begin{itemize}
+        \item C. A video projector’s light output is measured in lumens. In-
+plane switching (IPS) technology allows for a wider viewing
+angle. Some LCDs use a cold cathode fluorescent lamp
+(CCFL) as the lighting source instead of LEDs. OLED stands
+for organic light-emitting diode—that’s the lighting material
+used in the display.
+    \end{itemize}
+    \item Which power connector should be used to power
+an SATA hard drive?
+    \begin{itemize}
+        \item D. 15-pin connectors power SATA hard drives and
+other SATA devices (such as optical drives). Molex
+connectors power fans, older IDE devices, and
+other secondary devices. 6-pin power connectors
+are used for video cards (as are 8-pin connectors).
+24-pin refers to the main power connection for
+the motherboard.
+    \end{itemize}
+    \item Which voltages are supplied by a Molex power
+connector?
+    \begin{itemize}
+        \item A. Molex connectors provide 12 volts and 5 volts.
+There are four wires: if color-coded, yellow is 12 V,
+red is 5 V, and the two blacks are grounds.
+    \end{itemize}
+    \item A company salesperson just returned to the
+United States after three months in Europe. Now
+the salesperson tells you that her PC, which
+worked fine in Europe, won’t turn on. What is the
+best solution?
+    \begin{itemize}
+        \item D. Most likely, the voltage selector was set to 230
+V so that it could function properly in Europe (for
+example, in the UK). It needs to be changed to 115
+V so that the power supply can work properly in
+the United States. Make sure to do this while the
+computer is off and unplugged.
+    \end{itemize}
+    \item Which of the following can have 8 pins? (Select all
+that apply).
+    \begin{itemize}
+        \item A and D. PCIe power can be 8-pin or 6-pin. CPU
+power (EATX12V) can be 8-pin or 4-pin. SATA
+power is 15-pin (and data is 7-pin). ATX main
+power is typically 24-pin. Molex is a 4-wire
+connector; it is sometimes also referred to as
+“peripheral”.
+    \end{itemize}
+\end{enumerate}
+\subsection{Custom PCs and
+Common Devices}
+\begin{enumerate}
+    \item Which of the following is the best type of custom
+computer for use with Pro Tools?
+    \begin{itemize}
+        \item B. Audio/video editing workstation
+    \end{itemize}
+    \item Which of the following would include a gigabit
+NIC and a RAID array?
+    \begin{itemize}
+        \item D. NAS
+    \end{itemize}
+    \item Your organization needs to run Windows in a
+virtual environment. The OS is expected to require
+a huge amount of resources for a powerful
+application it will run. What should you install
+Windows to?
+    \begin{itemize}
+        \item C. Type 1 hypervisor
+    \end{itemize}
+    \item You have set up a user to work at a thin client. They will be
+accessing the OS image and data from a Windows Server 2016
+as well as data from the Google Cloud. Which of the following
+does this configuration not require? (Select the two best an‐
+swers.)
+    \begin{itemize}
+        \item . C and E. This configuration will not need a hard drive, be it
+M.2 or other SSD. Thin clients are meant to use an OS that is
+embedded in RAM (or other similar memory) or more often,
+grab an image from a server, often as a virtual machine. To do
+so, the thin client will need a network connection (wired or
+wireless), and every computer needs a CPU.
+    \end{itemize}
+    \item A customer has a brand new Chromebook and needs help con‐
+figuring it. Which of the following should you help the user
+with? (Select the three best answers.)
+    \begin{itemize}
+        \item A, B and D. You should show the user how to configure the
+touchpad and touchscreen, and guide the user through the ini‐
+tial account setup. Chrome OS is a fairly simple system com‐
+pared to Windows and other operating systems. To configure
+devices, simply go to the “Home” or app launcher button, then
+Settings, then Devices. The registry is a Windows configura‐
+tion tool—even if this was a Windows computer, the typical
+user has no place in the registry. The App Store is Apple’s ap‐
+plication download site. Google uses the Play Store. The Task
+Manager is another Windows utility. Consider writing a short
+user guide in Word document format if you have multiple
+users accessing the same type of system for the first time.
+Write it once, and train many!
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
     \begin{itemize}
         \item 
     \end{itemize}
