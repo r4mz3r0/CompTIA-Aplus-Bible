@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{xcolor}
 \usepackage{hyperref}
+\usepackage{listings}
 \usepackage{comment}
 \title{CompTIA A+ Bible}
 \author{1000+ Questions and Solutions}
@@ -4969,35 +4970,59 @@ BIOS could all be possible causes.
     \end{itemize}
     \item What is external code that changes your Internet Explorer settings?
     \begin{itemize}
-        \item 
+        \item B. A browser redirection is one of the most serious security problems. Browser hijacking
+software is external code that changes your Internet Explorer settings. It may include
+changing your home page or adding or removing items from your favorites. A man-
+in-the-middle attack is when the malicious individual positions himself between two
+communicating system, receiving all data. A SYN flood is a form of a DoS attack. Fraggle is
+an attack using UDP packets.
     \end{itemize}
     \item Which of the following is not a symptom of malware?
     \begin{itemize}
-        \item A. Increase in performance
+        \item A. Malware decreases performance. It can cause Internet connectivity issues, browser
+redirection, and pop-ups.
     \end{itemize}
     \item Which of the following is the first step in malware removal?
     \begin{itemize}
-        \item B. Quarantine the infected systems.
+        \item D. The steps are as follows:
+1. Identify and research malware symptoms.
+2. Quarantine the infected systems.
+3. Disable System Restore (in Windows).
+4. Remediate the infected systems.
+5. Schedule scans and run updates.
+6. Enable System Restore and create a restore point (in Windows).
+7. Educate the end user.
     \end{itemize}
     \item What Windows service should be disabled before cleaning an infection?
     \begin{itemize}
-        \item B. System Restore
+        \item B. Although it is recommended that you disable System Restore before cleaning an
+infection, it is a good idea to create a restore point after an infection is cleaned. This gives
+you a clean restore point going forward in case the system becomes infected again at some
+point. Network address translation, the Windows Firewall, and your antivirus should not
+be disabled.
     \end{itemize}
     \item Which of the following does not negatively impact mobile battery life?
     \begin{itemize}
-        \item A. Low brightness setting
+        \item A. A low brightness setting does not negatively impact battery life. A high setting, however,
+does. Location services, Bluetooth, and overheating do not negatively affect battery life.
     \end{itemize}
     \item Which of the following does not cause overheating of a mobile device?
     \begin{itemize}
-        \item B. Leaving phone on
+        \item B. While leaving the phone on will run down the battery, it will not alone cause it to
+overheat. Excessive gaming, using an old battery, and continuous online browsing will
+cause overheating.
     \end{itemize}
     \item Which of the following is not an indication of a security issue with a mobile device?
     \begin{itemize}
-        \item D. Low resource utilization
+        \item D. On the contrary, evidence of malware or other issues is usually accompanied by very
+high resource utilization. Unusual loss of power, slow speeds, and a weak signal are all
+signs of security issues.
     \end{itemize}
     \item Which of the following is an indication of a security issue with a mobile device?
     \begin{itemize}
-        \item C. Enabled camera
+        \item C. When cameras have been enabled when they weren’t previously, it is an indication of
+compromise. Low resource utilization, a disabled microphone, and authorized use of the
+device are not symptoms of a security issue.
     \end{itemize}
 \end{enumerate}
 \subsection{Operational Procedures} 
@@ -5135,25 +5160,55 @@ can be secured, while Secure Shell (SSH) is an encrypted technology.
 \begin{enumerate}
     \item Which of the following are Microsoft operating systems? 
     \begin{itemize}
-        \item Windows 8.1, Windows 7 
+        \item Answers: A, C, and F
+Explanation: Windows 8.1, Windows 10 (version 1803), and Windows 7 are all
+Microsoft operating systems that you should know for the exam.
+Incorrect Answers: iOS is the operating system Apple uses on its mobile devices.
+Android is the competitor of iOS and is an open-source operating system used on many
+other manufacturers’ mobile devices. Android is developed from Linux. The original Linux
+was made for PCs with the goal of being a freely accessible, open-source platform; today
+it is more commonly found in server form. Okay, that was an easy one…moving on!
     \end{itemize}
     \item Which of the following is the default file system used by Windows? 
     \begin{itemize}
-        \item NTFS
+        \item Answer: C
+Explanation: The New Technology File System (NTFS) is the default file system that
+Windows uses.
+Incorrect Answers: FAT32 is an older, less desirable file system that offers less functionality
+and less security and accesses smaller partition sizes. Compact Disc File System
+(CDFS) is the file system used by an optical disc. exFAT is another file system supported
+by Windows that works best with flash-based drives (such as USB thumb drives).
     \end{itemize}
     \item Where is the Notification Area located in Windows?
     \begin{itemize}
-        \item On the taskbar 
+        \item Answer: C
+Explanation: The Notification Area is the area toward the bottom right of your screen
+within the taskbar. It contains the time and any applications (shown as icons) currently
+running in memory. The System Properties dialog box contains configuration tabs for
+the computer name and network, hardware, system restore, and more. You can access
+any of the tabs in that dialog box quickly by going to Run and typing systempropertiescomputername.
+exe, systempropertiesadvanced.exe, and so on.
+Incorrect Answers: The System32 folder resides within the Windows folder; it contains
+the critical Windows system files such as ntoskrnl.exe as well as applications such
+as cmd.exe. The Start menu gives access to most programs and configurations in
+Windows.
     \end{itemize}
     \item Which of the following is the minimum amount of RAM needed to
 install a 64-bit version of Windows 10?
      \begin{itemize}
-         \item 
+         \item Answer: C
+Explanation: Windows 10 64-bit requires a minimum of 2 GB of RAM.
+Incorrect Answers: The 32-bit version requires 1 GB. The same goes for Windows 8.1.
+A minimum requirement for older versions of Windows was 512 MB. No doubt, 4 GB
+will be the minimum for some Windows versions at some point.
      \end{itemize}
      \item In Windows, an MMC is blank by default. Which of the following
 should be added to the MMC to populate it with programs?
      \begin{itemize}
-         \item 
+         \item Answer: D
+Explanation: The MMC (Microsoft Management Console) is a blank shell until you
+add snap-ins (such as Computer Management or the Performance Monitor) for
+functionality
      \end{itemize}
      \item Which of the following files is the boot loader in Windows?
      \begin{itemize}
@@ -5165,50 +5220,1125 @@ should be added to the MMC to populate it with programs?
      \end{itemize}
      \item Which type of partition should an operating system be installed to?
      \begin{itemize}
-         \item A. Primary
+         \item Answer: A
+Explanation: Primary partitions are the first partitions created on a drive. An OS should
+always be installed to a primary partition, but before you install the OS, you should set
+the primary partition to active. If you are installing to a new hard drive, Windows will
+automatically set the partition to active for you. A Master Boot Record (MBR)-based
+hard drive can have four primary partitions maximum, each with its own drive letter.
+Incorrect Answers: If you need to subdivide the hard drive further, you can also use an
+extended partition, which is then broken up into logical drives. A GUID Partition Table
+(GPT)-based hard drive is not limited to this number; it can have up to 128 primary
+partitions. Dynamic refers to a dynamic drive; if you want to resize partitions, you have
+to convert the drive to dynamic in Disk Management. By the way, any drive in Windows
+that has a drive letter is known as a volume.
      \end{itemize}
      \item Which of the following tools enables you to find out how much
 memory a particular application is using?
      \begin{itemize}
-         \item B. Task Manager
+         \item Answer: B
+Explanation: The Task Manager enables you, via a click of the Processes tab, to view
+all current running processes and see how much memory each is using. You can open
+the Task Manager by right-clicking the Taskbar and selecting it, by going to Run and
+typing taskmgr, by pressing Ctrl+Shift+Esc, or by pressing Ctrl+Alt+Del and selecting
+Task Manager.
+Incorrect Answers: Msconfig is a utility in Windows that allows you to enable and
+disable services and boot Windows in different modes. Chkdsk is a Command Prompt
+utility that searches for errors and fixes them (with the /F or /R switches). The
+System Information tool gives a summary of hardware resources, components, and the
+software environment; you can open it by going to Run and typing msinfo32.
      \end{itemize}
      \item Which of the following features is used to both start and stop ser-
 vices? (Select the two best answers.)
      \begin{itemize}
-         \item B. Task Manager
+         \item  Answer: A and B
+Explanation: You can start, stop, and restart services within Computer Management >
+Services and Applications > Services. From there, right-click the service in question
+and configure it as you wish. You can also open Services by going to the Run prompt
+and typing services.msc. The Task Manager can also be used to start and stop
+services, as well as to analyze the performance of the CPU, RAM, and the networking
+connections. You can also start and stop services with the net start / net stop
+and sc start / sc stop commands.
+Incorrect Answers: Performance Monitor analyzes the computer in much more depth
+than the Task Manager. The MMC is the Microsoft Management Console, which is the
+index that can store other console windows such as Computer Management. Among
+other things, Msconfig is used to enable/disable services, but not to start them.
      \end{itemize}
-     \item 
+     \item Which of the following user account permissions are needed to
+install device drivers on Windows?
+     \begin{itemize}
+         \item Answer: C
+Explanation: The administrator is the only account level that can install device drivers.
+Incorrect Answers: Standard user, and especially guest, accounts cannot install drivers
+or programs. The Power Users group is an older group from the Windows XP days
+that was carried over to newer versions of Windows for application compatibility, but it
+has no real power in those operating systems.
+     \end{itemize}
+     \item Which of the following commands creates a new directory in the
+Windows Command Prompt?
+     \begin{itemize}
+         \item  Answer: B
+Explanation: MD is short for make directory and is the command to use when creating
+directories in the Command Prompt.
+Incorrect Answers: CD is change directory. RD is remove directory, and SD, which
+deals with memory cards, is not a valid command in the Command Prompt.
+     \end{itemize}
+     \item Which of the following commands is entered at the Command
+Prompt to learn more about the dir command? (Select the two
+best answers.)
+     \begin{itemize}
+         \item Answers: B and C
+Explanation: To learn more about any command in Windows, open the Command
+Prompt, type the command and then /?, or type help dir.
+Incorrect Answers: dir help would attempt to find the file named HELP within the
+current directory. dir man would most likely result in a “file not found” error. MAN
+pages are help pages used in Linux and macOS.
+     \end{itemize}
+     \item Which interface is used to launch the ipconfig command?
+     \begin{itemize}
+         \item Answer: A
+Explanation: Use the Command Prompt to launch the command ipconfig. ipconfig is
+a networking command that displays the configuration of your network adapter. You can
+open the Command Prompt in a variety of ways. You can open the default Command
+Prompt by going to Run and typing cmd.exe. However, many commands require you
+to open the Command Prompt as an administrator (in elevated mode). To run it as an
+administrator, locate it in Windows, right-click it, and select Run as Administrator. Or,
+you could type cmd in the search field and then press Ctrl+Shift+Enter. You can also
+locate it in Windows 10 or 8.1 by right-clicking the Start button.
+Incorrect Answers: The other tools are used in the GUI and cannot run commands
+such as ipconfig. Use the Command Prompt or the PowerShell to run commands in
+Windows.
+     \end{itemize}
+     \item A customer’s computer is using FAT32. Which file system can you
+upgrade it to when using the convert command?
      \begin{itemize}
          \item 
      \end{itemize}
-     \item 
+     \item Which of the following can be used to keep hard drives free of
+errors and ensure that Windows runs efficiently? (Select the two
+best answers.)
      \begin{itemize}
-         \item 
+         \item B. Disk Defragmenter C. Check Disk
      \end{itemize}
-     \item 
+     \item What is Windows Recovery Environment known as? (Select the
+two best answers.)
      \begin{itemize}
-         \item 
+         \item A. WinRE D. System Recovery Options
      \end{itemize}
-     \item 
+     \item Which log file contains information about Windows setup errors?
      \begin{itemize}
-         \item 
+         \item B. setuperr.log
      \end{itemize}
-     \item 
+     \item Which of the following represents the RAM limitation of Windows
+8.1 Pro 64-bit?
      \begin{itemize}
-         \item 
+         \item C 512GB
      \end{itemize}
-     \item 
+     \item A customer’s Device Manager shows an arrow pointing down over
+one of the devices. What does this tell you?
      \begin{itemize}
-         \item 
+         \item Answer:   C                Explanation:        The arrow pointing down tells you that the device is disabled in Windows. In many cases, you can easily enable it by right-clicking and selecting En
      \end{itemize}
-     \item 
+     \item Which of the following is not an advantage of NTFS over FAT32?
      \begin{itemize}
-         \item 
+         \item Answer:   D                Explanation:        NTFS and FAT32 support the same number of file formats. This is actually the only listed similarity between the t
      \end{itemize}
-     \item 
+     \item A coworker just installed a second hard drive in his Windows com-
+puter. However, he does not see the drive in Explorer. What did he
+forget to do? (Select the three best answers.)
      \begin{itemize}
-         \item 
+         \item  Answers: A, B, and D                Explanation:        For secondary drives, you must go to Disk Management and initialize, partition, and format them. Explorer in the question could mean File Explorer (Windows 10) or Windows Explorer (Windows 7
      \end{itemize}
+     \item How would you create a restore point in Windows?
+     \begin{itemize}
+         \item Answer:   C                Explanation:        System Restore is the tool used to create restore points. In all versions of Windows, you can find it with the Search utility or by going to the Control Panel > All Control Panel Icons > System, and then clicking the System Protection link. (Or, go to Run and type systempropertiesprotection.exe.) In Windows 7, you can find it in Start > All Programs > Accessories > System Tools as well.
+     \end{itemize}
+     \item Which of the following tasks cannot be performed from the Printer
+Properties screen?
+     \begin{itemize}
+         \item   Answer:   C                Explanation:        To pause printing in general and pause individual documents, double-click on the printer in question and make the modifications from the ensuing window.
+     \end{itemize}
+     \item You are setting up auditing on a Windows computer. If it’s set up
+properly, which of the following logs should contain entries?
+     \begin{itemize}
+         \item   Answer:   C                Explanation:        After Auditing is turned on and specific resources are configured for auditing, you need to check the Event Viewer’s Security log for the entries. These could be successful logons or misfired attempts at deleting files; there are literally hundreds of option
+     \end{itemize}
+     \item Which type of virus propagates itself by tunneling through the
+Internet and networks?
+     \begin{itemize}
+         \item   Answer:   D                Explanation:        Worms travel through the Internet and through local-area networks (LANs). They are similar to viruses but differ in that they self-replicate
+     \end{itemize}
+     \item Which component of Windows enables users to perform common
+tasks as non administrators and, when necessary, as administrators
+without having to switch users, log off, or use Run As?
+     \begin{itemize}
+         \item   Answer:   B                Explanation:        With User Account Control (UAC) enabled, users perform common tasks as nonadministrators and, when necessary, as administrators without having to switch users, log off, or use Run As. If the user is logged in as an administrator, a pop-up win-dow will appear verifying that the user has administrative privileges before action is taken; the user need only click Yes. If the user is not logged on as an administrator, clicking Yes will cause Windows to prompt the user for an administrative username and pas
+     \end{itemize}
+     \item Which of the following tasks can be performed to secure your
+WAP/router? (Select all that apply.)
+     \begin{itemize}
+         \item  Answers: A, B, and D                Explanation:        A multifunction network device that acts as both a wireless access point (WAP) and a router may come with a standard, default SSID name (that everyone knows). It is a good idea to change it (if the router doesn’t ask you to do so auto-matically). After PCs and laptops have been associated with the wireless network, turn off SSID broadcasting so that no one else can find your WAP (with normal means). Disabling DHCP and instead using static IP addresses removes one of the types of packets that are broadcast from the WAP, making it more difficult to hack, but of course less functional and useful. Other ways to secure the wireless access point include changing the password; incorporating strong encryption such as Wi-Fi Protected Access version 2 (WPA2) with Advanced Encryption Standard (AES); dis-abling WPS; and initiating MAC filtering, which only allows the computers with the MAC addresses you specify access to the wireless network.
+     \end{itemize}
+     \item When you connect to a website to make a purchase by credit card,
+you want to make sure the website is secure. Which of the follow-
+ing statements best describes how to determine whether a site is
+secure? (Select the two best answers.)
+     \begin{itemize}
+         \item   Answers: A and D                Explanation:        Although it could possibly be spoofed, the padlock in the locked posi-tion gives you a certain level of assurance and tells you that the website is using a secure certificate to protect your session. This padlock could be in different locations depending on the web browser used. Hypertext Transfer Protocol Secure (HTTPS) also defines that the session is using either the Secure Sockets Layer (SSL) protocol or the Transport Layer Security (TLS) protocol.                Incorrect        Answers:        HTTP by itself is enough for regular web sessions when you read documents and so on, but HTTPS is required when you log in to a site, purchase items, or do online banking. HTTPS opens a secure channel on port 443 as opposed to the default, insecure HTTP port 80. To be sure that you have a secure session, you can analyze the certificate and verify it against the certificate auth
+     \end{itemize}
+     \item Which type of software helps protect against viruses that are
+attached to email?
+     \begin{itemize}
+         \item  Answer:   B                Explanation:        Antivirus software (from vendors such as McAfee or Symantec) updates automatically to protect you against the latest viruses, whether they are attached to emails or are lying in wait on removable media. You might also choose to use Windows Defender on newer versions of Window
+     \end{itemize}
+     \item Which of the following is an example of social engineering?
+     \begin{itemize}
+         \item   Answer:   A                Explanation:        Social engineering is the practice of obtaining confidential information by manipulating people. Asking for a username and password over the phone is a type of phishing attack (known as vishin
+     \end{itemize}
+     \item Where are software-based firewalls most commonly implemented?
+     \begin{itemize}
+         \item Answer:   C                Explanation:        Software-based firewalls, such as the Windows Defender Firewall, nor-mally run on client computers.                Incorrect        Answers:        It is possible that software-based firewalls will run on servers, especially if the server is acting as a network firewall, but the servers might rely on a hardware-based network firewall or an IDS/IPS solution. Hardware-based firewalls are also found in multifunction network devices. Some people might refer to these devices as routers, but the router functionality is really just one of the roles of the multifunction network device—separate from the firewall role. Plus, higher-end routers for larger networks are usually not combined with firewall functionality. Switches don’t employ software firewalls, mainly because they don’t use software (for the mos
+     \end{itemize}
+     \item Making data appear as if it is coming from somewhere other than
+its original source is known as which of the following terms?
+     \begin{itemize}
+         \item D. Spoofing
+     \end{itemize}
+     \item A fingerprint reader is known as which type of security
+technology?
+     \begin{itemize}
+         \item A. Biometrics
+     \end{itemize}
+     \item Which of the following is the most secure password?
+     \begin{itemize}
+         \item D. Marqu1s\_De\_S0d\_ver\_2
+     \end{itemize}
+     \item Which shortcut key combination immediately locks Windows?
+     \begin{itemize}
+         \item B. Windows+L
+     \end{itemize}
+     \item Which of the following is the most secure file system in Windows?
+     \begin{itemize}
+         \item Answer:   C Explanation:        NTFS is Windows’ New Technology File System. It secures files and fold-ers (and, in fact, the whole partition) much better than the older FAT32 system does.EFS, BitLocker, and NTFS permissions are just a few of the advantages of an NTFSpartition
+     \end{itemize}
+     \item Which of the following is the most secure for your wireless
+network?
+     \begin{itemize}
+         \item Answer:   B        Explanation:        WPA2 is superior to WPA and WEP and takes much longer to crack (if itis crackable at all). It works best with AES
+     \end{itemize}
+     \item Which of the following terms refers to when people are
+manipulated into giving access to network resources?
+     \begin{itemize}
+         \item Answer:   B        Explanation:        Social engineering is when fraudulent individuals try to get information from users through manipulation.
+     \end{itemize}
+     \item A customer’s Windows computer needs a new larger, faster hard
+drive. Another technician in your company installs the new drive
+and then formats the old drive before delivering it to you for
+disposal. How secure is the customer’s data?
+     \begin{itemize}
+         \item Answer:   B        Explanation:        The data is very insecure. Many tools can recover data from a drive after it is formatted. Some companies will “low-level” format the drive, or sanitize the drive(as opposed to a standard format in Windows, for example) and keep it in storage indefinitely. The organization might go further and use data wiping software; in fact,this might be a policy for the organization. Always check your organization’s policies to be sure you are disposing of or recycling hard drives properly.
+     \end{itemize}
+     \item Which of the following offers hardware-based authentication?
+     \begin{itemize}
+         \item Answer:   B                Explanation:        Smart cards are actual physical cards that you use as authentica-tion tools. They are sometimes referred to as tokens and have built-in processors. Examples of smart cards include the Personal Identity Verification (PIV) card used by U.S. government employees and the Common Access Card (CAC) used by Department of Defense personnel.
+     \end{itemize}
+     \item Which protocol encrypts transactions through a website?
+     \begin{itemize}
+         \item Answer:   B                Explanation:        Secure Sockets Layer (SSL) and the newer Transport Layer Security (TLS) encrypt the transactions through the website. These SSL certificates are often accompanied by the protocol HTTPS.
+     \end{itemize}
+     \item Which of the following is a common local security policy?
+     \begin{itemize}
+         \item Answer:   B                Explanation:        Common local security policies include password length, duration, and complexity. Just the use of a password doesn’t constitute a password policy. An exam-ple of a password policy would be when an organization mandates that passwords be 15 characters in length with at least 1 capital letter, 1 number, and 1 special character. In Windows you would access Local Security Policy > Security Settings > Account Policies > Password Policy to make changes to these things
+     \end{itemize}
+     \item A coworker downloads a game that ends up stealing information
+from the computer system. What is this known as?
+     \begin{itemize}
+         \item Answer:   C                Explanation:        A Trojan is a disguised program that is used to gain access to a computer and either steal information or take control of the computer.
+     \end{itemize}
+     \item Which of the following is an open-source operating system?
+     \begin{itemize}
+         \item Answer: A
+Explanation: Android is an open-source OS. It is freely downloadable and can be modi-
+fied by manufacturers of mobile devices to suit their specific hardware.
+     \end{itemize}
+     \item Where can you obtain applications for mobile devices? (Select the
+three best answers.)
+     \begin{itemize}
+         \item Answers: B, C, and D
+Explanation: Android users download applications (apps) from Google Play. Apple
+users download apps from the App Store or from within iTunes.
+     \end{itemize}
+     \item You need to locate a mobile device that was stolen. Which technol-
+ogy can aid in this?
+     \begin{itemize}
+         \item Answer: A
+Explanation: The Global Positioning System (GPS) technology (or location services)
+can be instrumental in locating lost or stolen mobile devices. Many devices have this
+installed; others rely on geotracking or Wi-Fi hotspot locating techniques. (You are
+being watched!)
+     \end{itemize}
+     \item Which kinds of data are typically synchronized on a smartphone?
+(Select the two best answers.)
+     \begin{itemize}
+         \item Answers: A and C
+Explanation: Some of the things you might synchronize on a smartphone include con-
+tacts, email, programs, pictures, music, and videos.
+     \end{itemize}
+     \item Which of the following is the second step of the A+ troubleshoot-
+ing theor
+     \begin{itemize}
+         \item Answer: B
+Explanation: The second step is to establish a theory of probable cause. You are look-
+ing for the obvious or most probable cause for the problem.
+     \end{itemize}
+     \item You successfully modified the Registry on a customer’s PC. Now
+the customer’s system gets onto the Internet normally. Which of
+the following steps should be performed next?
+     \begin{itemize}
+         \item Answer: C
+Explanation: Documentation is the final step in the troubleshooting theory. This helps
+you better understand and articulate exactly what the problem (and solution) was. If
+you see this problem in the future, you can consult your documentation for the solu-
+tion. Plus, others on your team can do the same. In addition, it is common company
+policy to document all findings as part of a trouble ticket.
+     \end{itemize}
+     \item Buzz gets an error that says “Error log full.” Where should you go
+to clear his error log?
+     \begin{itemize}
+         \item Answer: D
+Explanation: The Event Viewer contains the error logs; they are finite in size. You could
+either clear the log or increase the size of the log.
+     \end{itemize}
+     \item Which of the following tools checks protected system files?
+     \begin{itemize}
+         \item Answer: D
+Explanation: System File Checker ( SFC ) checks protected system files and replaces
+incorrect versions.
+     \end{itemize}
+     \item After installing a new hard drive on a Windows computer, Len tries
+to format the drive. Windows does not show the format option in
+Disk Management. What did Len forget to do first?
+     \begin{itemize}
+         \item Answer: B
+Explanation: You must partition the drive before formatting.
+     \end{itemize}
+     %54
+     \item Which Windows System Recovery Option attempts to automati-
+cally fix problems?
+     \begin{itemize}
+         \item Answer: B
+Explanation: The best answer is Startup repair. Startup repair attempts to fix issues
+automatically. This is available in the Windows RE System Recovery Options.
+     \end{itemize}
+     \item Which utility enables you to troubleshoot an error with a file such
+as ntoskrnl.exe?
+     \begin{itemize}
+         \item Answer: B
+Explanation: The Event Viewer logs all errors that occur on a system. Particularly, the
+System log would contain the information useful in troubleshooting this error.
+     \end{itemize}
+     \item A blue screen is most often caused by
+     \begin{itemize}
+         \item Answer: A
+Explanation: The most common reason for a BSOD (blue screen of death, otherwise
+known as a stop error) is driver failure.
+     \end{itemize}
+     \item A technician is installing a program on a Windows computer
+and the installation fails. Which of the following statements
+describes the next best step?
+     \begin{itemize}
+         \item Answer: A
+Explanation: Run the installer as an administrator. Programs cannot be installed by
+standard users or guests. You must have administrative rights to do so.
+     \end{itemize}
+     \item Which of the following statements best describes how to apply
+spray cleaner to a monitor?
+     \begin{itemize}
+         \item Answer: D
+Explanation: Spray on a lint-free cloth first, and then wipe the display gently. A lot of
+companies sell products that are half isopropyl alcohol and half water. You could also
+make this cleaner yourself. Again, remember to put the solution on a lint-free cloth
+first.
+     \end{itemize}
+      \item You and a coworker are running network cables above the drop
+ceiling. The coworker accidentally touches a live AC power line and
+is thrown off the ladder and onto the ground. He is dazed and can’t
+stand. He is no longer near the AC power line. Which of the follow-
+ing statements best describes the first step you should take?
+     \begin{itemize}
+         \item Answer: D
+Explanation: Because the immediate danger is gone, call 911 right away.
+     \end{itemize}
+      \item A computer you are working on has a lot of dust inside it. Which
+of the following statements best describes how to clean this?
+     \begin{itemize}
+         \item Answer: D
+Explanation: Compressed air is safe. However, you might want to do this outside and
+vacuum up the leftover residue. Or if you are working inside, use compressed air to
+blow dust out of the computer while using an antistatic vacuum to suck up the dust at
+the same time.
+     \end{itemize}
+      \item You are working on a very old printer and it begins to smoke.
+Which of the following statements best describes the first step you
+should take?
+     \begin{itemize}
+         \item Answer: C
+Explanation: Turning off the printer might not be enough. It might be seriously mal-
+functioning, so pull the plug.
+Incorrect Answers: Dialing 911 is not necessary unless a fire has started. Wait at least
+15 minutes before opening the printer to see what caused the smoke. Printer power sup-
+plies can fail just like a PC’s power supply can. In fact, a laser printer power supply does
+more work because it needs to convert for high voltages in the 600-V range. If you have a
+maintenance contract with a printer company, and the printer is under warranty or contained
+in the service contract, you could call the maintenance company to fix the problem. Be
+ready to give a detailed account of exactly what happened. You could tell the printer that it
+is bad to smoke, but that would be belligerent and would probably show that you have been
+working too hard. All kidding aside, be ready to disconnect power at a moment’s notice.
+     \end{itemize}
+      \item Which of the following statements best describes the recommended
+method for handling an empty toner cartridge?
+     \begin{itemize}
+         \item Answer: D
+Explanation: Recycle toner cartridges according to your company’s policies and proce-
+dures, or according to municipality rules and regulations.
+     \end{itemize}
+      \item One of your technicians is on a service call and is dealing with a
+furious customer who has been shouting loudly. The technician
+tries but cannot calm down the customer. Which of the following
+statements best describes the next step the technician should
+take?
+     \begin{itemize}
+         \item Answer: C
+Explanation: The technician should leave the customer site and document the incident.
+In rare cases, there is no way to calm down the customer, and you might have to leave
+the site if there is no other alternative.
+incident.
+     \end{itemize}
+      \item While you are working at a customer site, a friend calls you on
+your cell phone. Which of the following statements best describes
+the recommended course of action?
+     \begin{itemize}
+         \item Answer: A
+Explanation: While you’re on the job site, limit phone calls to only emergencies or calls
+from your employer about other customers.
+Incorrect Answers: Taking a personal phone call, texting, or using social media sites
+while working at a client site is considered unprofessional. Be professional when you’re
+on the job.
+     \end{itemize}
+      \item Which of the following tools is used when setting the computer to
+boot with the Selective Startup feature?
+     \begin{itemize}
+         \item  Answer: D
+Explanation: Msconfig enables you to modify the startup selection. You can boot the
+computer in different modes with Msconfig . You can also enable and disable services.220-1002 Practice Exam A
+169
+Incorrect Answers: The Task Manager gives you a snapshot of your system’s per-
+formance and allows you to shut down applications (tasks) or processes, even if the
+application is hanging or frozen. Windows RE is the Windows Recovery Environment,
+a special repair environment that is used to fix issues in the operating system. From
+here, you can fix system file issues and repair the boot sector, along with GPT and
+MBR-related issues. Safe Mode is one of the options in the Startup Settings/Advanced
+Boot Options menu. It starts the computer with a basic set of drivers so that you can
+troubleshoot why devices have failed. It is also instrumental when dealing with viruses.
+     \end{itemize}
+      \item Which of the following file extensions is used when saving
+PowerShell scripts?
+     \begin{itemize}
+         \item Answer: C
+Explanation: The .ps1 extension is used for PowerShell files and scripts.
+     \end{itemize}
+     \item You have been given the task of installing a new hard drive on
+a server for a customer. The customer will be supervising your
+work. Which of the following questions should you ask the customer
+first?
+     \begin{itemize}
+         \item Answer: B
+Explanation: Always check whether there are backups, and physically inspect and
+verify the backups before changing out any drives. Making sure that a backup is avail-
+able is the first order of business.
+     \end{itemize}
+      \item You just upgraded the president’s computer’s video driver. Now,
+the Windows 10 system will not boot. Which of the following steps
+should be taken first?
+     \begin{itemize}
+         \item Answer: B
+Explanation: By rolling back the driver (which is done in the Device Manager) while in
+Safe Mode, you can go back in time to the old working video driver.
+Incorrect Answers: The Windows Recovery Environment might help (for example, if
+you used Startup Settings > Safe Mode, or System Restore), but the WinRE Command
+Prompt is not the best answer because it is a different tool. Reinstalling the OS would
+wipe the partition of the president’s data (and probably wipe you of your job). Directory
+Services Restore mode (although listed in the Advanced Startup Options) is only for
+Windows Server domain controllers.
+     \end{itemize}
+      \item Which tool is used to analyze and diagnose a video card, including
+its DirectX version?
+     \begin{itemize}
+         \item Answer: B
+Explanation: The DxDiag utility is used to analyze a video card and its DirectX version
+and to check if drivers are digitally signed. You can access it by going to Run and typ-
+ing dxdiag .
+     \end{itemize}
+      \item Which of the following statements best describes a common risk
+when installing Windows drivers that are unsigned?
+     \begin{itemize}
+         \item Answer: A
+Explanation: By installing a driver that is not signed by Microsoft, you are risking
+instability of the operating system.
+     \end{itemize}
+      \item Which of the following settings must be established when you
+want to make a secure wireless connection? (Select all that apply.)
+     \begin{itemize}
+         \item  Answer: C and D
+Explanation: To make a secure connection, you first need to know the Service Set
+Identifier (SSID) of the AP and then the encryption being used (for example, WPA or
+WPA2). The SSID takes care of the “connection” portion, and the encryption takes care
+of the “secure” portion. After all computers are connected, consider disabling the SSID
+for increased security.
+Incorrect Answers: Knowing the wireless standard being used can help you verify
+whether your computer is compatible (802.11ac, n, or g), but the brand of access point
+isn’t really helpful.
+     \end{itemize}
+      \item Which Windows utility is used to prepare a drive image for duplication
+across the network?
+     \begin{itemize}
+         \item Answer: B
+Explanation: Sysprep is one of the utilities built into Windows for image deployment
+over the network.
+Incorrect Answers: Ghost and Image Clone are third-party offerings. Robocopy copies
+entire directories (in the same physical order, too). Sysprep preps the system to be
+moved as an image file.
+     \end{itemize}
+      \item In Windows, when will a computer dump the physical memory
+     \begin{itemize}
+         \item Answer: D
+Explanation: If the computer fails and cannot recover, you usually see some type of
+critical or stop error. At this point, you must restart the computer to get back into the
+operating system (unless it is configured to do so automatically, which is the default
+setting in Windows). The reason for the physical dump of memory is for later debug-
+ging. The physical dump writes the contents of memory (when the computer failed) to
+a file on the hard drive.
+Incorrect Answers: Missing drivers do not cause this error, but a failed driver might.
+If the wrong processor is installed, you can probably not get the system to boot at all.
+Shutting down the computer improperly just means that the computer recognizes this
+upon the next reboot and might attempt to automatically fix errors if any occurred.
+     \end{itemize}
+      \item When a person takes control of a session between a server and a
+client, it is known as which type of attack?
+     \begin{itemize}
+         \item Answer: C
+Explanation: Session hijacking occurs when an unwanted mediator takes control of
+the session between a client and a server (for example, an FTP or HTTP session). An
+example of this would be a man-in-the-middle (MITM) attack.
+Incorrect Answers: DDoS is a distributed denial-of-service attack, an attack perpetu-
+ated by hundreds or thousands of computers in an effort to take down a single server;
+the computers, individually known as zombies, are often unknowingly part of a botnet.
+A brute-force attack is an attempt to crack an encryption code or password. Malicious220-1002 Practice Exam A
+171
+software is any compromising code or software that can damage a computer’s files;
+examples include viruses, spyware, worms, rootkits, ransomware, and Trojans.
+     \end{itemize}
+      \item The message “The Windows Boot Configuration Data File Is
+Missing Required Information” appears on the screen. Which command
+can repair this issue?
+     \begin{itemize}
+         \item Answer: C
+Explanation: Bootrec /rebuildbcd attempts to rebuild the boot configuration store.
+Incorrect Answers: Bootrec /fixboot is one of the methods you can try to repair
+bootmgr.exe in Windows. Bootrec /fixmbr rewrites the master boot record in a
+Windows system that has an MBR-based hard drive (doesn’t affect the more common
+GPT-based drive). boot bcd is where the boot configuration store is located.
+     \end{itemize}
+     \item Which of the following should be performed during a hard drive
+replacement to best maintain data privacy?
+     \begin{itemize}
+         \item Answer: A
+Explanation: The drive should be completely erased with bit-level erasure software.
+If it is to be disposed of or is to leave the building, it should also be shredded or
+degaussed (or both.
+     \end{itemize}
+     \item Which tool is used to back up data on the C: drive in Windows 10?
+     \begin{itemize}
+         \item Answer: D
+Explanation: The Windows 10 and 8 File History utility (accessible in the Control
+Panel) enables a user to back up files or the entire PC
+     \end{itemize}
+     \item Which of the following is the minimum processor requirement for
+Windows 10?
+     \begin{itemize}
+         \item Answer: B
+Explanation: Windows 10 (and Windows 8 and Windows 7) requires a minimum pro-
+cessor frequency of 1 GHz.
+Incorrect Answers: Windows 10 64-bit requires 32 GB of hard drive space. As of the
+writing of this book, 2 GHz is not a valid answer for Windows. The minimum RAM
+requirement for 64-bit versions of Windows is 2 GB.
+     \end{itemize}
+     \item You create an answer file to aid in installing Windows. Which type
+of installation are you performing? (Select the best answer.)
+     \begin{itemize}
+         \item Answer: D
+Explanation: An unattended installation of Windows requires an answer file. This file is
+normally named unattend.xml. Unattended installations can be done locally or as part
+of a network installation using Windows Deployment Services (WDS) in Server 2008 or
+higher.
+     \end{itemize}
+     \item Which of the following utilities can be used to view the startup
+programs?
+     \begin{itemize}
+         \item C. Regedit
+     \end{itemize}
+     
+\end{enumerate}
+\subsection{Practice Exam B}
+\begin{enumerate}
+    \item Which of the following statements best describes how to restart the print spooler service? 
+    \begin{itemize}
+        \item Answer: A and D Explanation: In the command line, this service is simply known as Spooler. Type net
+stop spooler and net start spooler to restart the service. In Computer
+Management, the Print Spooler service is found in Services and Applications >
+Services. Or you could open the Run prompt and type services.msc. From there,
+you can start, stop, pause, resume, or restart services and also set their Startup type
+to Automatic, Manual, or Disabled.
+    \end{itemize}
+    \item Where is Registry hive data stored? 
+    \begin{itemize}
+        \item Answer: D
+        \begin{lstlisting}
+            \%systemroot%\System32\Config
+        \end{lstlisting}
+    \end{itemize}
+    \item Clinton needs a more secure partition on his hard drive. Currently the only partition on the drive (C:) is formatted as FAT32. He cannot lose the data on the drive but must have a higher level of security, so he is asking you to change the drive to NTFS. Which of the following is the proper syntax for this procedure
+    \begin{itemize}
+        \item Answer: C
+Explanation: The convert command turns a FAT32 drive into an NTFS drive without
+data loss, allowing for a higher level of data security. The proper syntax is convert
+volume /FS:NTFS .
+    \end{itemize}
+    \item Tom has a 200GB hard drive partition (known as C:) on a Windows computer. He has 15GB free space on the partition. Which of the following statements best describes how he can defrag the
+    partition? 
+    \begin{itemize}
+        \item Answer: B
+Explanation: Use defrag.exe -f . You need to have 15 percent free space on your
+partition to defrag it in the Disk Defragmenter GUI-based utility. In the scenario, Tom
+would need 30 GB free on the 200 GB drive. However, you can force a defrag on a par-
+tition even if you don’t have enough free space by using the -f switch in the command
+line. ( -f may not be necessary in some versions of Windows.)
+    \end{itemize}
+    \item You are utilizing WSUS and are testing new updates on PCs what is this example of? 
+    \begin{itemize}
+        \item Answer: C
+Explanation: Patch management is the patching of many systems from a central
+location. It includes the planning, testing, implementing, and auditing stages. There
+are various software packages you can use to perform patch management. Windows
+Server Update Services (WSUS) is an example of Microsoft patch management soft-
+ware. Other Microsoft examples include the System Center Configuration Manager
+(SCCM) and its predecessor Systems Management Center (SMS), but there are plenty
+of third-party offerings as well.
+    \end{itemize}
+    \item Which versions of Windows 8 allow for joining domains? 
+    \begin{itemize}
+        \item Answers: B and D
+Explanation: Windows 8 Pro and Enterprise allow for the joining of domains.
+    \end{itemize}
+    \item One of your customers reports that there is a large amount of
+spam in her email inbox. Which of the following statements
+describes the best course of action to recommend to her?
+\begin{itemize}
+        \item 
+    \end{itemize}
+    \item In Windows, where can devices like the display and hard drives be
+configured to turn off after a certain amount of time?
+    \begin{itemize}
+        \item B. Display Properties
+    \end{itemize}
+    \item Which of the following procedures best describes how to find out
+which type of connection the printer is using?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item Your customer is having problems printing from an application.
+You attempt to send a test page to the printer. Which of the following
+statements best describes why a test page should be used to
+troubleshoot the issue?
+    \begin{itemize}
+        \item C. It verifies the connectivity and illuminates possible
+application problems.
+    \end{itemize}
+    \item A user’s hard drive seems very slow in its reaction time when
+opening applications. Which of the following statements best
+describes the most likely cause of this?C. The drive is fragmented.
+    \begin{itemize}
+        \item C. The drive is fragmented.
+    \end{itemize}
+    \item Which of the following actions will not secure a functioning computer
+workstation?
+    \begin{itemize}
+        \item D. Sanitizing the hard drive
+    \end{itemize}
+    \item Which utility enables you to implement auditing on a single
+Windows computer?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item Which of the following statements best describes the main function
+of a device driver?
+    \begin{itemize}
+        \item D. Allows the OS to talk to the device
+    \end{itemize}
+    \item Where are restore points stored after they are created?
+    \begin{itemize}
+        \item The System32 folder
+    \end{itemize}
+    \item Which of the following is considered to be government-regulated
+data?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item Which of the following are types of social engineering? (Select the
+two best answers.)
+    \begin{itemize}
+        \item B. Shoulder surfing C. Tailgating
+    \end{itemize}
+    \item Which of the following is the service that controls the printing of
+documents in a Windows computer?
+    \begin{itemize}
+        \item B. Print server
+    \end{itemize}
+    \item Which of the following is the best way to ensure that a hard drive
+is secure for disposal?
+    \begin{itemize}
+        \item A. Magnetically erase the drive.
+    \end{itemize}
+    \item A month ago, you set up a wireless access point/router for a small
+business that is a customer of yours. Now, the customer calls and
+complains that Internet access is getting slower and slower. As you
+look at the WAP/router, you notice that it was reset at some point
+and is now set for open access. You then guess that neighboring
+companies are using the service connection. Which of the following
+statements best describes how you can restrict access to your
+customer’s wireless connection? (Select the two best answers.)
+    \begin{itemize}
+        \item A. Configure the wireless access point to use WPA2.
+    \end{itemize}
+    \item A first-level help desk support technician receives a call from a
+customer and works with the customer for several minutes to
+resolve the call, but the technician is unsuccessful. Which of the
+following steps should the technician perform next?
+    \begin{itemize}
+        \item The technician should explain to the customer that he
+will receive a callback when someone more qualified is
+available.
+    \end{itemize}
+    \item A customer complains that there is nothing showing on the display
+of his laptop. Which of the following should you attempt first on
+the computer?
+    \begin{itemize}
+        \item D. You should check whether the laptop is in Standby or
+Hibernate mode.
+    \end{itemize}
+    \item During an installation of Windows, you are given an opportunity
+to load alternative third-party drivers. Which device are you most
+likely loading drivers for?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item A Windows 10 computer in a Windows workgroup can have how
+many concurrent connections?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item Megan’s laptop runs perfectly when she is at work, but when she
+takes it on the road, it cannot get on the Internet. Internally, the
+company uses static IP addresses for all computers. What should
+you do to fix the problem?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item Which power-saving mode enables for the best power savings,
+while still allowing the session to be reactivated later?
+    \begin{itemize}
+        \item C. Hibernate
+    \end{itemize}
+    \item John’s computer has two hard drives, each 1 TB. The first is the
+system drive and is formatted as NTFS. The second is the data
+drive and is formatted as FAT32. Which of the following statements
+are true? (Select the two best answers.)
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item When using the command line, a switch
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item You need to view any application errors that have occurred today.
+Which tool should be used?
+    \begin{itemize}
+        \item A. Event Viewer
+    \end{itemize}
+    \item Which of the following commands can help you modify the startup
+environment?
+    \begin{itemize}
+        \item C. Boot Config Editor
+    \end{itemize}
+    \item Which of the following log files references third-party software
+error messages?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item Which of the following provides the lowest level of wireless security
+protection?
+    \begin{itemize}
+        \item D. Enable WEP on the wireless access point.
+    \end{itemize}
+    \item A customer uses an unencrypted wireless network. One of the
+users has shared a folder for access by any computer. The customer
+complains that files sometimes appear and disappear from
+the shared folder. Which of the following statements best describes
+how to fix the problem? (Select the two best answers.)
+    \begin{itemize}
+        \item C. Increase the level of security on the NTFS folder by
+changing the permissions., D. Change the share-level permissions on the shared
+folder.
+    \end{itemize}
+    \item A customer is having difficulties with his hard drive, and the system
+won’t boot. You discover that the operating system has to be
+reloaded. Which of the following statements best describes how to
+explain this to the customer?
+    \begin{itemize}
+        \item D. “I need to restore the system; data loss might occur.”
+    \end{itemize}
+    \item Users in your accounting department are prompted to provide
+usernames and passwords to access the payroll system. Which
+type of authentication method is being requested in this scenario?
+    \begin{itemize}
+        \item B. Single-factor
+    \end{itemize}
+    \item Which of the following commands makes a duplicate of a file?
+    \begin{itemize}
+        \item B. Copy
+    \end{itemize}
+    \item Which tool in Windows enables a user to easily see how much
+memory a particular process uses?
+    \begin{itemize}
+        \item C. Task Manager
+    \end{itemize}
+    \item Windows was installed on a computer with two hard drives: a C:
+drive and a D: drive. Windows is installed to C:, and it works normally.
+The user of this computer complains that his applications are
+drive intensive and that they slow down the computer. Which of the
+following statements best describes how to resolve the problem?
+    \begin{itemize}
+        \item C. Defrag the D: drive.
+    \end{itemize}
+    \item Which of the following tools should be used to protect a computer
+from electrostatic discharge (ESD) while you are working inside it?
+    \begin{itemize}
+        \item C. Antistatic wrist strap
+    \end{itemize}
+    \item You are running some cable from an office to a computer located
+in a warehouse. As you are working in the warehouse, a 55-gallon
+drum falls from a pallet and spills what smells like ammonia.
+Which of the following statements best describes the first step you
+should take in your efforts to resolve this problem?
+    \begin{itemize}
+        \item C. Get out of the area.
+    \end{itemize}
+    \item While you are upgrading a customer’s server hard drives, you notice
+looped network cables lying all over the server room floor. Which of
+the following statements best describes how to resolve this issue?
+    \begin{itemize}
+        \item B. Tell the customer about safer alternatives.
+    \end{itemize}
+    \item Which of the following statements best describes the recommended
+solution for a lithium-ion battery that won’t hold a charge any longer?
+    \begin{itemize}
+        \item C. Contact the local municipality and inquire as to their
+disposal methods.
+    \end{itemize}
+    \item Which of the following statements is not assertive communication?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item A customer has a malfunctioning PC, and as you are about to
+begin repairing it, the customer proceeds to tell you about the
+problems with the server. Which of the following statements best
+describes how to respond to the customer?
+    \begin{itemize}
+        \item C. “Is the server problem related to the PC problem?”
+    \end{itemize}
+    \item Which of the following could be described as the chronological
+paper trail of evidence?
+    \begin{itemize}
+        \item D. Data preservation
+    \end{itemize}
+    \item Which of the following statements best describes what not to do
+when moving servers and server racks?
+    \begin{itemize}
+        \item B. Move a 70-pound wire rack by yourself.
+    \end{itemize}
+    \item Active communication includes which of the following?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item You are troubleshooting a tablet PC that has a frozen application.
+You have attempted to end the underlying task of the application
+but have not succeeded. Which of the following statements best
+describes the next recommended course of action?
+    \begin{itemize}
+        \item B. Force quit the app
+    \end{itemize}
+    \item Which of the following statements best describes the first course
+of action to removing malware?
+    \begin{itemize}
+        \item Quarantine infected systems.
+    \end{itemize}
+    \item You are working on a Windows computer that is performing
+slowly. Which of the following commands should you use to
+resolve the problem? (Select the two best answers.)
+    \begin{itemize}
+        \item D. Chkdsk B. Dism
+    \end{itemize}
+    \item A customer reports that an optical drive in a PC is no longer
+responding. Which of the following statements best describes the
+first question you should ask the customer?
+    \begin{itemize}
+        \item A. “What has changed since the optical drive worked
+properly?”
+    \end{itemize}
+    \item A coworker is traveling to Europe and is bringing her desktop
+computer. She asks you what concerns there might be. Which of
+the following statements best describes how to respond to the
+customer? (Select the two best answers.)
+    \begin{itemize}
+        \item B. Advise her to check for a compatible power adapter for
+that country. D. Advise her to check the voltage selector on the power
+supply.
+    \end{itemize}
+    \item After you remove malware/spyware from a customer’s PC for the
+third time, which of the following steps should be taken next?
+    \begin{itemize}
+        \item C. Show him how to avoid the problem.
+    \end{itemize}
+    \item You are asked to fix a problem with a customer’s Active Directory
+Domain Services domain controller that is outside the scope of
+your knowledge. Which of the following statements best describes
+the recommended course of action?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item When you are working on a computer, which of the following
+should be disconnected to prevent electrical shock? (Select the
+two best answers.)
+    \begin{itemize}
+        \item A. Printer D. Power cord
+    \end{itemize}
+    \item You are troubleshooting a Windows Server computer that you have
+little knowledge about. The message on the screen says that there
+is a “DHCP partner down” error. No other technicians are available
+to help you, and your manager wants the server fixed ASAP or you
+are fired. Which of the following statements best describes the
+recommended course of action? (Select the two best answers.)
+    \begin{itemize}
+        \item A. Identify the problem. C. Establish a plan of action.
+    \end{itemize}
+    \item Which of the following protects confidential information from
+being disclosed publicly?
+    \begin{itemize}
+        \item D. Hard drive wipe
+    \end{itemize}
+    \item Programs that run when Windows starts are stored in which of the
+following registry hives?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item Typically, which of the following Windows tools enables you to
+configure a SOHO router?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item Which of the following steps is performed first when running a
+clean install of Windows on a brand new SAS hard drive?
+    \begin{itemize}
+        \item B. Partition the drive
+    \end{itemize}
+    \item A coworker maps a network drive for a user, but after rebooting,
+the drive is not seen within Explorer. Which of the following steps
+should be taken first to ensure that the drive remains mapped?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item Based on the physical hardware address of the client’s network
+device, which of the following is commonly used to restrict access
+to a network?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item A print job fails to leave the print queue. Which of the following
+services may need to be restarted?
+    \begin{itemize}
+        \item B. Print Spooler
+    \end{itemize}
+    \item After installing a network application on a computer running
+Windows 10, the application does not communicate with the
+server. Which of the following actions should be taken first?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item A customer reports a problem with a PC located in the same room
+as cement testing equipment. The room appears to have adequate
+cooling. The PC will boot up but locks up after 5–10 minutes of
+use. After a lockup, it will not reboot immediately. Which the following
+statements best describes the most likely problem?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item One of your Windows users is trying to install a local printer and
+is unsuccessful based on the permissions for the user account.
+Which of the following types best describes this user account?
+    \begin{itemize}
+        \item C. Guest
+    \end{itemize}
+    \item When accessing an NTFS shared resource, which of the following
+are required? (Select the two best answers.)
+    \begin{itemize}
+        \item Answers: B and D
+Explanation: The share-level permissions must first be set to enable access to the
+user. Then the NTFS file-level “user” permissions must also be set; the most restrictive
+of the two will take precedence (usually this is configured as NTFS being more restrictive).
+    \end{itemize}
+    \item You are contracted to recover data from a laptop. In which two
+locations might you find irreplaceable, valuable data? (Select the
+two best answers.)
+    \begin{itemize}
+        \item Answers: C and D
+Explanation: Pictures and email are possibly valuable, and definitely irreplaceable, if
+there is no backup.
+    \end{itemize}
+    \item Which utility enables auditing at the local level?
+    \begin{itemize}
+        \item Answer: B
+Explanation: Of all the answers, the only one that deals with the local level is Local
+Security Policy.
+    \end{itemize}
+    \item A customer has forgotten his password. He can no longer access
+his company email address. Which of the following statements
+best describes the recommended course of action?
+    \begin{itemize}
+        \item Answer: B
+Explanation: In many cases, passwords cannot be reset by the user or by the systems
+admin. If that is the case, you need to verify the identity of the person first. You might
+need to do so just as a matter of organizational policy
+    \end{itemize}
+    \item Which of the following can help locate a lost or stolen mobile
+device?
+    \begin{itemize}
+        \item Answer: C
+Explanation: GPS can help to locate a stolen or lost mobile device. Plenty of third party
+programs allow the user to track the device, as long as it is on and has GPS
+installed and functioning. If the device is off, the program will display the last known
+good location.
+    \end{itemize}
+    \item Which of the following can be disabled to help prevent access to a
+wireless network?
+    \begin{itemize}
+        \item Answer: B
+Explanation: To aid in preventing access to a wireless network, disable the SSID. But
+only do this when all computers have been connected. If more computers need to be
+connected later, they will have to connect manually, or the SSID will have to be reenabled.
+    \end{itemize}
+    \item Which of the following commands sets the time on a workstation?
+    \begin{itemize}
+        \item Answer: A
+Explanation: If you are just setting the time on the computer, use the time command.
+Time can also be set in Windows within the Notification Area. This is a bit of a trick
+question because you are dealing only with local time, not anything network-related.
+So the rest of the answers are incorrect
+    \end{itemize}
+    \item In Windows, which utility enables you to select and copy characters
+from any font?
+    \begin{itemize}
+        \item Answer: D
+Explanation: The Character Map enables you to copy characters from any font type.
+To open it, go to Run and type charmap. In Windows 10, go to Start > Windows
+Accessories > Character Map. In Windows 7, go to Start > All Programs > Accessories >
+System Tools > Character Map. Otherwise, in any version of Windows, you can locate
+it simply by searching for it by name.
+    \end{itemize}
+    \item Which of the following can be described as removing the limitations
+of Apple iOS?
+    \begin{itemize}
+        \item Answer: B
+Explanation: Jailbreaking is the process of removing the limitations of an Apple
+device’s iOS. It enables a user to gain root access to the system and download previously
+unavailable applications, most likely unauthorized by Apple.
+    \end{itemize}
+    \item In Windows, which of the following built-in applets should be used
+by a technician to enable and manage offline files, view conflicts
+and partnerships, and ensure locally stored files match those
+stored on an external device or server?
+    \begin{itemize}
+        \item Answer: D
+Explanation: The Sync Center is located within the Control Panel or can be found using
+the search tool. It allows you to set up synchronization partnerships with external
+devices and enables you to manage offline files. Sometimes, the individual icons within
+the Control Panel are referred to as applets.
+    \end{itemize}
+    \item Which language support for representing characters is built into
+Windows?
+    \begin{itemize}
+        \item Answer: A
+Explanation: Unicode is the code used to represent characters among multiple computers’
+language platforms. It is commonly used in Microsoft Word and other Office
+programs. For example, to show the logical equivalence symbol, you would type
+U+2261, then highlight that text, and then press the Alt+X shortcut on the keyboard,
+which changes the text into the symbol .Unicode works regardless of the language
+a person is working in.
+    \end{itemize}
+    \item Which of the following is the best source of information about
+malicious software detected on a computer?
+    \begin{itemize}
+        \item Answer: B
+Explanation: New malicious software (malware) is always being created. Because of
+this, the best place to find information about spyware, a virus, rootkit, ransomware,
+or other malware is at a place that can be updated often and easily: the anti-malware
+company’s website.
+    \end{itemize}
+    \item You are working for a company as a roaming PC tech and have
+been assigned work by a network administrator. The admin notifies
+you that the company is experiencing a DDoS attack. Half a dozen
+internal Windows PCs are the source of the traffic. The admin
+gives you the Windows computer names and tells you that they
+must be scanned and cleaned immediately. Which of the following
+effects to the PCs should you as a PC technician focus on fixing?
+(Select the two best answers.)
+    \begin{itemize}
+        \item Answers: A and D
+Explanation: The Windows PCs have probably been infected by a worm and have been
+compromised and turned into zombies (bots). Trojans could also be involved in this scenario.
+The Windows PCs are probably part of a botnet that includes other computers as
+well. The botnet is orchestrated by a master computer that initiates the DDoS (distributed
+denial-of-service) attack. The infections that you as the technician will have to remove
+include the worm and the zombie program (or script).You might also be informed that
+the systems need to be isolated, wiped, and re-imaged before they can be used again.
+    \end{itemize}
+    \item You are troubleshooting a networking problem with Windows, and
+you can’t seem to fix it using the typical Windows GUI-based troubleshooting
+tools or with the Command Prompt. You have identified
+the problem and established a theory of probable cause. (In
+fact, you are on your fourth theory.) Which tool should be used to
+troubleshoot the problem, and in what stage of the troubleshooting
+process should you do so?
+    \begin{itemize}
+        \item Answer: D
+Explanation: Use the Registry Editor (regedit.exe) to try troubleshooting the problem
+if typical GUI-based and Command Prompt methods have provided no resolution.
+The Registry Editor allows you to do any configuration necessary in Windows, and
+using it may be necessary for more complex troubleshooting problems. At this point
+you are testing the theory to determine cause because you have already identified the
+problem and established a theory of probable cause. Remember your CompTIA A+
+troubleshooting theory from the 220-1001 objectives. I’ve listed them below.
+    \end{itemize}
+    
 \end{enumerate}
 \end{document}
 
