@@ -6229,41 +6229,63 @@ tify malware symptoms.
 slowly. Which of the following commands should you use to
 resolve the problem? (Select the two best answers.)
     \begin{itemize}
-        \item D. Chkdsk B. Dism
+        \item Answers: B and D
+Explanation: The best listed answers are dism and chkdsk . For a computer that
+is running slow, try using the chkdsk (check disk) and SFC (system file checker)
+commands. Then, if those run into problems, try using the dism (Deployment Image
+Servicing and Management) command. Chkdsk and SFC can repair problems with the
+drive and with system files. Dism can repair problems with the system image (where
+SFC will draw information from).
     \end{itemize}
     \item A customer reports that an optical drive in a PC is no longer
 responding. Which of the following statements best describes the
 first question you should ask the customer?
     \begin{itemize}
-        \item A. “What has changed since the optical drive worked
-properly?”
+        \item Answer: A
+Explanation: You should first ask if anything has changed since the optical drive
+worked properly.
     \end{itemize}
     \item A coworker is traveling to Europe and is bringing her desktop
 computer. She asks you what concerns there might be. Which of
 the following statements best describes how to respond to the
 customer? (Select the two best answers.)
     \begin{itemize}
-        \item B. Advise her to check for a compatible power adapter for
-that country. D. Advise her to check the voltage selector on the power
-supply.
+        \item Answer: B and D
+Explanation: Your coworker might need an adapter; otherwise, the plug may not fit in
+some countries’ outlets. Some power supplies have selectors for the United States and
+Europe (115 and 230 volts). If the wrong voltage is selected, the power supply will not
+work and the computer will not boot; it can also be a safety concern if the voltage is
+set incorrectly. Newer power supplies might auto-sense the voltage. If the power sup-
+ply doesn’t have one of those red switches, check the documentation to see if it can
+switch the voltage automatically.
     \end{itemize}
     \item After you remove malware/spyware from a customer’s PC for the
 third time, which of the following steps should be taken next?
     \begin{itemize}
-        \item C. Show him how to avoid the problem.
+        \item Answer: C
+Explanation: Teach the user how to avoid this problem by recommending safe comput-
+ing practices. The customer will then be more likely to come back to you with other
+computer problems. ’Nuff said.
     \end{itemize}
     \item You are asked to fix a problem with a customer’s Active Directory
 Domain Services domain controller that is outside the scope of
 your knowledge. Which of the following statements best describes
 the recommended course of action?
     \begin{itemize}
-        \item 
+        \item Answer: D
+Explanation: Make sure that the customer has a path toward a solution before dismiss-
+ing the issue.
     \end{itemize}
     \item When you are working on a computer, which of the following
 should be disconnected to prevent electrical shock? (Select the
 two best answers.)
     \begin{itemize}
-        \item A. Printer D. Power cord
+        \item  Answers: C and D
+Explanation: The power cord carries 120 volts at 15 amps or 20 amps, with all of the
+obvious danger that such voltage and amperage entails. While normally low voltage, a
+landline telephone cord carries 80 volts when the phone rings. That and network cables
+can also be the victims of power surges from central office or networking equipment. It
+is important to disconnect these before servicing a computer.
     \end{itemize}
     \item You are troubleshooting a Windows Server computer that you have
 little knowledge about. The message on the screen says that there
@@ -6272,50 +6294,79 @@ to help you, and your manager wants the server fixed ASAP or you
 are fired. Which of the following statements best describes the
 recommended course of action? (Select the two best answers.)
     \begin{itemize}
-        \item A. Identify the problem. C. Establish a plan of action.
+        \item Answers: A and D
+Explanation: You should attempt to identify the problem and call Microsoft tech sup-
+port (or contact them in another manner). The message tells you that the DHCP part-
+ner is down. This means that there are two DHCP servers, one acting as a failover. As
+part of your identification of the problem, you should access the TechNet, for example:
     \end{itemize}
     \item Which of the following protects confidential information from
 being disclosed publicly?
     \begin{itemize}
-        \item D. Hard drive wipe
+        \item Answer: A
+Explanation: The classification of data helps prevent confidential information from
+being publicly disclosed. Some organizations have a classification scheme for their
+data, such as normal, secret, and top secret. Policies are implemented to make top
+secret data the most secure on the network. By classifying data, you are determining
+who has access to it. This is generally done on a need-to-know basis.
     \end{itemize}
     \item Programs that run when Windows starts are stored in which of the
 following registry hives?
     \begin{itemize}
-        \item 
+        \item Explanation: HKEY\_LOCAL\_MACHINE is the Registry hive that stores information
+about the programs Windows runs when it starts
     \end{itemize}
     \item Typically, which of the following Windows tools enables you to
 configure a SOHO router?
     \begin{itemize}
-        \item 
+        \item Answer: D
+Explanation: The first thing you need to supply is the driver for any special drives,
+such as new SCSI drives, SAS drives, or RAID controllers. That, of course, is optional.
+If you have a typical SATA drive, Windows should recognize it automatically.
     \end{itemize}
     \item Which of the following steps is performed first when running a
 clean install of Windows on a brand new SAS hard drive?
     \begin{itemize}
-        \item B. Partition the drive
+        \item Answer: D
+Explanation: The first thing you need to supply is the driver for any special drives,
+such as new SCSI drives, SAS drives, or RAID controllers. That, of course, is optional.
+If you have a typical SATA drive, Windows should recognize it automatically.
     \end{itemize}
     \item A coworker maps a network drive for a user, but after rebooting,
 the drive is not seen within Explorer. Which of the following steps
 should be taken first to ensure that the drive remains mapped?
     \begin{itemize}
-        \item 
+        \item Answer: A
+Explanation: Although Windows has the Reconnect at Sign In check box selected by
+default, it could have been disabled.
     \end{itemize}
     \item Based on the physical hardware address of the client’s network
 device, which of the following is commonly used to restrict access
 to a network?
     \begin{itemize}
-        \item 
+        \item Answer: C
+Explanation: MAC filtering is used to restrict computers from connecting to a network;
+it is based on the physical Media Access Control (MAC) address of the computer’s net-
+work adapter. It works with wired or wireless connections.
     \end{itemize}
     \item A print job fails to leave the print queue. Which of the following
 services may need to be restarted?
     \begin{itemize}
-        \item B. Print Spooler
+        \item Answer: B
+Explanation: The Print Spooler needs to be restarted on the computer that started the
+print job or the computer that controls the printer. This can be done in the Services
+console window or in the Command Prompt with the net stop spooler and net
+start spooler commands, or anywhere else that services can be started and
+stopped, such as the Task Manager.
     \end{itemize}
     \item After installing a network application on a computer running
 Windows 10, the application does not communicate with the
 server. Which of the following actions should be taken first?
     \begin{itemize}
-        \item 
+        \item Answer: C
+Explanation: Adding the port number and name of service to the Windows Defender
+Firewall Exceptions list is the correct answer. But I’m going to pontificate more, as I
+usually do.
     \end{itemize}
     \item A customer reports a problem with a PC located in the same room
 as cement testing equipment. The room appears to have adequate
@@ -6323,13 +6374,25 @@ cooling. The PC will boot up but locks up after 5–10 minutes of
 use. After a lockup, it will not reboot immediately. Which the following
 statements best describes the most likely problem?
     \begin{itemize}
-        \item 
+        \item Answer: B
+Explanation: The PC air intakes are probably clogged with cement dust. This stops
+fresh, cool air from entering the PC and causes the CPU to overheat. That’s why the
+system doesn’t reboot immediately; the CPU needs some time to cool down. You
+should install a filter in front of the PC air intake and instruct the customer to clean the
+filter often. While you are working on the computer, you should clean out the inside
+of the system and vacuum out the exhaust of the power supply (without opening the
+power supply, of course).
     \end{itemize}
     \item One of your Windows users is trying to install a local printer and
 is unsuccessful based on the permissions for the user account.
 Which of the following types best describes this user account?
     \begin{itemize}
-        \item C. Guest
+        \item Answer: C
+Explanation: The Guest account is the most likely answer here. This account has the
+fewest privileges of all Windows accounts. It cannot install printers or printer drivers.
+By the way, Standard users can also have issues with printers depending on the ver-
+sion of Windows and the policies involved. But the Guest has absolutely no administra-
+tive powers whatsoever.
     \end{itemize}
     \item When accessing an NTFS shared resource, which of the following
 are required? (Select the two best answers.)
@@ -6472,6 +6535,385 @@ problem and established a theory of probable cause. Remember your CompTIA A+
 troubleshooting theory from the 220-1001 objectives. I’ve listed them below.
     \end{itemize}
     
+\end{enumerate}
+\subsection{Practice Exam C}
+\begin{enumerate}
+    \item You work as a technician for an organization that has a custom web-based application that is used for the monitoring of networking devices. While using a web browser to access the application, you press F12, and 
+    within the js folder, you see the following code: 
+    \begin{lstlisting}
+    $(function(){
+     (function())
+     {
+        var selects = $('select[data-toggle="collapse"]')$
+     }
+    }$
+    \end{lstlisting}
+    \begin{itemize}
+        \item JavaScript
+    \end{itemize}
+    \item Viruses have been detected and removed on a customer's computer several times during the course of several weeks. Which of the following methods will best help prevent future occurrences? 
+    \begin{itemize}
+        \item C. Install antivirus software that uses manual updates.
+    \end{itemize}
+    \item Which of the following sends an invitation by email asking for
+help?
+    \begin{itemize}
+        \item B. Service call
+    \end{itemize}
+    \item When you are performing a clean installation, which of the follow-
+ing is the default location for the system files of Windows?
+    \begin{itemize}
+        \item C. C:WindowsSystem32
+    \end{itemize} 
+    \item You are required to set up a remote backup solution for music and
+photos stored on an Android tablet. The files cannot be stored at
+any company location. Which technology should be used?
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}\item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    \item 
+    \begin{itemize}
+        \item 
+    \end{itemize}
 \end{enumerate}
 \end{document}
 
