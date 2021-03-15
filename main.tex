@@ -7180,20 +7180,40 @@ that includes the encryption code.
 you cannot find the file you are looking for in the System32 folder.
 Which of the following Control Panel utilities should you configure?
     \begin{itemize}
-        \item B. System
+        \item Answer: D
+Explanation: Use the Folder Options utility in the Control Panel of Windows 8.1.
+From there, you go to the View tab and then deselect the check box labeled “Hide
+protected operating system files (Recommended).” You might also deselect the “Hide
+extensions for known file types” check box to see which ones are .dll files. Note
+that this utility was removed from the Windows 10 Control Panel. Instead, you can
+access it with File Explorer Options or from the File Explorer program by choosing
+View > Options > Change Folder and Search Options. Or you can go to Run and type
+control folders.
     \end{itemize}
     \item One of your customers has a defective disk. Which command
 can be used to extract readable information?
     \begin{itemize}
-        \item A. Recover
+        \item Answer: A
+Explanation: The Recover command can recover readable information from a bad or
+defective disk. The disk should be attached (slaved) to a working computer to get back
+the data
     \end{itemize}
     \item You have been asked to load a copy of the company’s purchased
 software on a personal computer. Which of the following statements
 best describes the first step you should take to remedy the
 problem?
     \begin{itemize}
-        \item Verify that the install is allowed under the company’s
-licensing agreements.
+        \item Answer: A
+Explanation: You should first verify that the installation is allowed under a company’s
+licensing agreement. It probably isn’t, but you should check first. Most organizations
+do not allow purchased software to be installed on an employee’s home computer.
+If doing so is against organization policy, you should notify your supervisor. There
+are many types of licenses that you should be aware of, including end-user licensing
+agreements (EULA), digital rights management (DRM), commercial and enterprise
+licenses (such as client access licenses or CALs), open source versus closed source
+(that is, Android versus iOS), personal licenses, and so on. Again, be sure to follow
+and incorporate corporate end-user policies and security best practices when it comes
+to these types of licenses.
     \end{itemize}
     \item Your friend is playing the latest first-person game on a PC, but the
 screen is pausing during game play. Your friend has a high-end
@@ -7201,24 +7221,43 @@ graphics card and the maximum memory for the motherboard.
 Which of the following statements best describes how to remedy
 the problem?
     \begin{itemize}
-        \item A. Upgrade the drivers.
+        \item Answer: A
+Explanation: If you see video issues such as pausing during game play, upgrade the
+video drivers. Make sure that you download the latest video driver from the manufacturer’s
+website. Gamers cannot rely on Microsoft drivers.
     \end{itemize}
     \item You have been asked to move data from one user’s laptop to
 another user’s laptop, each of which has EFS functioning. Which of
 the following statements best describes the first step you should
 take to remedy the problem?
     \begin{itemize}
-        \item 
+        \item Answer: B
+Explanation: The first thing you should do is export the user’s certificate from the first
+laptop to the second laptop. You can do this by clicking Start and typing certmgr.
+msc in the Search box; then locate and export the correct Personal Certificate. The
+Certificates console window can also be added to an MMC. The Encrypting File System
+(EFS) is the standard single-file encryption method for Windows (if the version supports
+it).
     \end{itemize}
     \item Which of the following statements is true?
     \begin{itemize}
-        \item 
+        \item Answer: B
+Explanation: Authentication can be carried out by utilizing something a user is, such as
+a fingerprint; something a user knows, such as a password or PIN; something a user
+has, such as a smart card or token; and something a user does, such as writing a signature
+or speaking words.
     \end{itemize}
     \item You are required to implement an organizational policy that states
 user passwords can’t be used twice in a row. Which of the following
 policies should be configured?
     \begin{itemize}
-        \item B. Enforce password history
+        \item Answer: B
+Explanation: You should configure the Enforce password history policy and set it to
+a number higher than zero. This way, when a user is prompted to change her password
+every 42 days (which is the default minimum password age), that user will not
+be able to use the same password. Password policies can be accessed in Windows
+within Local Security Policy window > Security Settings > Account Policies > Password
+Policy.
     \end{itemize}
     \item You are working on a computer in which you just installed a new
 hard drive. The system already runs Windows. The new hard drive
@@ -7226,32 +7265,49 @@ does not appear in Explorer. Which of the following statements
 best describes the next step you should take to ensure the drive
 will be recognized by the operating system?
     \begin{itemize}
-        \item E. Set the drive to active.
+        \item Answer: B
+Explanation: When you add a second drive to a system that already has Windows
+installed, you will probably have to initialize the drive and format it in the Disk
+Management utility.
     \end{itemize}
     \item An attacker is constantly trying to hack into one of your customer’s
 SOHO networks. Which of the following statements best describes
 the easiest, most practical way to protect the network from
 intrusion?
     \begin{itemize}
-        \item E. Install an IDS.
+        \item Answer: D
+Explanation: The most practical way to prevent intrusion to the network is to install a
+firewall. In fact, if this is a SOHO network, chances are the network is controlled by a
+multifunction network device that already acts as a switch and a router and probably
+has built-in firewall technology; it just has to be enabled. Usually, these are enabled by
+default, but perhaps someone inadvertently disabled this feature, and that’s one of the
+reasons an attacker keeps trying to get into the network.
     \end{itemize}
     \item One of the administrators recently moved a large chunk of data
 from one server to another. Now, several users are reporting they
 cannot access certain data shares and get the following error:
 Access Denied. The admin confirms that the users are in the
 proper security groups, but the users are still unable to access the
-shares. Which of the following are the most l kely causes of the
+shares. Which of the following are the most likely causes of the
 problem? (Select the two best answers.)
     \begin{itemize}
-        \item A. Denied permissions D. Administrative share permissions
+        \item Answers: A and C
+Explanation: The most likely reasons the users cannot connect are because of denied
+permissions and mapped drives. If the data was moved to another computer, the
+folders will inherit new permissions from the parent (by default). That will most likely
+eliminate the current user access. Also, the path to the share will change (again by
+default). Either the server name/IP address, the sharename, or both will be different
+when the data is moved to another server. So, to fix the problem, the user and group
+permissions will have to be modified for the new share, and new mapped drives will
+need to be configured.
     \end{itemize}
     \item Which command in the Linux terminal enables you to find out
 information about a wireless network adapter?
     \begin{itemize}
-        \item A. IpconfigYou have a Windows computer for which you wish to write a batch
-file. You want the batch file to turn off the computer after a certain
-amount of time. Which main command should be run in the
-batch file?
+        \item Answer: D
+Explanation: Use iwconfig (or ifconfig) to analyze a wireless network adapter
+in the Linux terminal. (Note that iwconfig does not work in macOS, but ifconfig
+does.) Also, as of the writing of this book, the ip a command can be used as well.
     \end{itemize}
     \item You have a Windows computer for which you wish to write a batch
 file. You want the batch file to turn off the computer after a certain
@@ -7263,19 +7319,19 @@ batch file?
     \item Which switch of the Robocopy command copies subdirectories
 but skips empty ones?
     \begin{itemize}
-        \item 
+        \item /s copies subdirectories but skips any empty ones
     \end{itemize}
     \item Which of the following are components of dealing with prohibited
 content? (Select the three best answers.)
     \begin{itemize}
-        \item C. Preserving data D. Creating a chain of custody
+        \item A. C. Preserving data D. Creating a chain of custody
     \end{itemize}
     \item You are designing the environmental controls for a server room
 that contains several servers and other network devices. Which of
 the following statements best describes the role of an HVAC
 system in this environment? (Select the two best answers.)
     \begin{itemize}
-        \item C. It provides an appropriate ambient temperature. E. It vents fumes from the server room.
+        \item C. It provides an appropriate ambient temperature. D. 
     \end{itemize}
 \end{enumerate}
 \end{document}
